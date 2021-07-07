@@ -5,6 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                
+                echo "Esto es el id de la build ---- > ${env.BUILD_ID}"
+                echo "Esta es la url de jenkins ----> ${env.JENKINS_URL}"
             }
         }
         stage('Test') {
